@@ -1,0 +1,10 @@
+# Aussie Builder
+User-agent: *
+Allow: /
+Disallow: /admin.html
+Disallow: /server.py
+Disallow: /_legacy/
+Disallow: /demo/
+Disallow: /_tools/
+
+Sitemap: https://aussiebuilder.com.au/sitemap.xml

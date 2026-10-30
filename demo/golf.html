@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="UTF-8">
+<title>Fairway Golf — Adelaide</title>
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  html,body{width:1440px;height:900px;overflow:hidden}
+  body{font-family:"Segoe UI",Helvetica,Arial,sans-serif;background:#0E2A20;color:#EFEAE0}
+  .nav{display:flex;align-items:center;gap:38px;padding:0 60px;height:84px;border-bottom:1px solid rgba(239,234,224,.14)}
+  .logo{font-family:Georgia,serif;font-size:22px;letter-spacing:.06em}
+  .logo span{color:#C9A961;font-style:italic}
+  .links{display:flex;gap:28px;font-size:13px;letter-spacing:.06em;color:rgba(239,234,224,.66);text-transform:uppercase}
+  .nav .right{margin-left:auto;display:flex;align-items:center;gap:20px}
+  .tel{font-size:13px;color:rgba(239,234,224,.72)}
+  .outline{padding:11px 22px;border:1px solid #C9A961;color:#C9A961;font-size:12px;letter-spacing:.14em;text-transform:uppercase}
+  .hero{display:grid;grid-template-columns:1fr 660px;height:calc(900px - 84px - 148px)}
+  .copy{padding:76px 0 0 60px}
+  .kick{font-size:11.5px;letter-spacing:.26em;text-transform:uppercase;color:#C9A961;margin-bottom:26px}
+  h1{font-family:Georgia,serif;font-weight:400;font-size:62px;line-height:1.06;letter-spacing:-.01em;color:#F6F2E9}
+  h1 em{font-style:italic;color:#C9A961}
+  .rule{width:64px;height:1px;background:#C9A961;margin:30px 0}
+  .sub{font-size:15.5px;line-height:1.75;color:rgba(239,234,224,.62);max-width:420px}
+  .ctas{display:flex;gap:16px;margin-top:38px;align-items:center}
+  .solid{padding:15px 30px;background:#C9A961;color:#0E2A20;font-size:12.5px;letter-spacing:.14em;text-transform:uppercase;font-weight:600}
+  .quiet{font-size:12.5px;letter-spacing:.12em;text-transform:uppercase;color:rgba(239,234,224,.7);border-bottom:1px solid rgba(239,234,224,.3);padding-bottom:4px}
+  .shot{position:relative;overflow:hidden;background:#0F2A20}
+  .shot__photo{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 55%}
+  .shot::after{content:"";position:absolute;inset:0;
+    background:linear-gradient(180deg,rgba(10,26,20,.42) 0%,rgba(10,26,20,.04) 38%,rgba(14,42,32,.88) 100%)}
+  .band{height:148px;border-top:1px solid rgba(239,234,224,.14);display:flex;align-items:center;padding:0 60px;gap:56px}
+  .m{flex:1}
+  .m b{display:block;font-family:Georgia,serif;font-size:17px;font-weight:400;color:#F6F2E9;margin-bottom:6px}
+  .m span{font-size:12.5px;line-height:1.6;color:rgba(239,234,224,.55)}
+  .m em{font-style:normal;color:#C9A961;font-size:12px;letter-spacing:.14em;text-transform:uppercase;display:block;margin-bottom:8px}
+</style>
+</head>
+<body>
+  <header class="nav">
+    <div class="logo">Fairway <span>Golf</span></div>
+    <nav class="links"><span>Clubs</span><span>Custom fit</span><span>Balls</span><span>Apparel</span><span>Lessons</span></nav>
+    <div class="right">
+      <div class="tel">(08) 8000 2211</div>
+      <div class="outline">Book a fitting</div>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="copy">
+      <div class="kick">North Adelaide · South Australia</div>
+      <h1>Fitted properly,<br>or not <em>at all.</em></h1>
+      <div class="rule"></div>
+      <p class="sub">A fitting bay, a launch monitor, and two hours with someone who actually plays. We stock four brands, not fourteen — and we'll tell you when the clubs you already own are fine.</p>
+      <div class="ctas">
+        <div class="solid">Book a fitting</div>
+        <div class="quiet">Shop pre-owned</div>
+      </div>
+    </div>
+
+    <div class="shot">
+      <img class="shot__photo" src="photos/golf.webp" alt="">
+    </div>
+  </section>
+
+  <section class="band">
+    <div class="m"><em>Fitting</em><b>TrackMan bay, 60 minutes</b><span>Loft, lie, shaft and grip — measured, not guessed.</span></div>
+    <div class="m"><em>Pre-owned</em><b>Trade-in and buy back</b><span>Last season's irons, checked and re-gripped in house.</span></div>
+    <div class="m"><em>Members</em><b>10% off, always</b><span>Free re-grips for the life of the club.</span></div>
+  </section>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="UTF-8">
+<title>Coastline Sports — Perth</title>
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  html,body{width:1440px;height:900px;overflow:hidden}
+  body{font-family:"Segoe UI",Helvetica,Arial,sans-serif;background:#FFFFFF;color:#0B1B2B}
+  .top{display:flex;align-items:center;gap:36px;padding:0 56px;height:74px;border-bottom:1px solid #E6E9ED;background:#fff}
+  .logo{font-size:19px;font-weight:800;letter-spacing:-.02em}
+  .logo span{color:#0B6E4F}
+  .links{display:flex;gap:26px;font-size:13.5px;color:#5A6773}
+  .top .right{margin-left:auto;display:flex;align-items:center;gap:14px}
+  .search{width:210px;padding:9px 14px;border:1px solid #E6E9ED;border-radius:6px;font-size:12.5px;color:#9AA5B1}
+  .cart{padding:10px 18px;background:#0B1B2B;color:#fff;border-radius:6px;font-size:12.5px;font-weight:600}
+  .hero{position:relative;height:470px;background:#0B1B2B;overflow:hidden;display:flex;align-items:center;padding:0 56px}
+  .arc{position:absolute;border:2px solid rgba(198,240,60,.28);border-radius:50%}
+  .arc.a{width:760px;height:760px;right:-120px;top:-160px}
+  .arc.b{width:520px;height:520px;right:-40px;top:-40px;border-color:rgba(198,240,60,.45)}
+  .glow{position:absolute;width:520px;height:520px;border-radius:50%;right:40px;top:20px;
+    background:radial-gradient(circle,rgba(198,240,60,.20) 0%,rgba(198,240,60,0) 68%)}
+  .hero .inner{position:relative;z-index:2;max-width:640px}
+  .kick{display:inline-block;padding:6px 13px;border-radius:999px;background:rgba(198,240,60,.14);color:#C6F03C;font-size:11.5px;letter-spacing:.16em;text-transform:uppercase;margin-bottom:24px}
+  h1{font-size:64px;line-height:1.02;letter-spacing:-.035em;font-weight:800;color:#fff}
+  h1 em{font-style:normal;color:#C6F03C}
+  .sub{margin-top:22px;font-size:15.5px;line-height:1.7;color:rgba(255,255,255,.62);max-width:460px}
+  .ctas{display:flex;gap:12px;margin-top:32px}
+  .ctas .p{padding:14px 26px;background:#C6F03C;color:#0B1B2B;border-radius:6px;font-size:13.5px;font-weight:700}
+  .ctas .s{padding:13px 24px;border:1px solid rgba(255,255,255,.26);color:#fff;border-radius:6px;font-size:13.5px}
+  .hero__photo{position:absolute;right:56px;top:52px;width:452px;height:366px;border-radius:18px;overflow:hidden;
+    z-index:2;border:1px solid rgba(255,255,255,.14);box-shadow:0 40px 90px rgba(0,0,0,.6)}
+  .hero__photo img{width:100%;height:100%;object-fit:cover;object-position:center 58%;display:block}
+  .cats{display:grid;grid-template-columns:repeat(4,1fr);border-bottom:1px solid #E6E9ED}
+  .cat{padding:30px 32px 34px;border-right:1px solid #E6E9ED;position:relative}
+  .cat:last-child{border-right:0}
+  .cat b{display:block;font-size:16px;font-weight:700;margin-bottom:6px;letter-spacing:-.01em}
+  .cat span{font-size:12.5px;color:#7A8794;line-height:1.55}
+  .ico{width:44px;height:44px;margin-bottom:18px;border-radius:10px;background:#F2F6F4;position:relative}
+  .ico::after{content:"";position:absolute;inset:11px;border-radius:50%;border:2.5px solid #0B6E4F}
+  .ico.b::after{border-radius:6px 6px 2px 2px}
+  .ico.c::after{border-radius:50% 50% 4px 4px;border-color:#0B1B2B}
+  .ico.d::after{border-radius:2px;border-color:#0B1B2B;transform:rotate(45deg)}
+  .foot{display:flex;align-items:center;justify-content:space-between;padding:0 56px;height:calc(900px - 74px - 470px - 156px);font-size:12.5px;color:#7A8794}
+  .foot b{color:#0B1B2B}
+</style>
+</head>
+<body>
+  <header class="top">
+    <div class="logo">Coastline <span>Sports</span></div>
+    <nav class="links"><span>Running</span><span>Footy</span><span>Cricket</span><span>Swim</span><span>Gym</span></nav>
+    <div class="right">
+      <div class="search">Search 4,000 products</div>
+      <div class="cart">Cart (2)</div>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="arc a"></div>
+    <div class="arc b"></div>
+    <div class="glow"></div>
+    <div class="hero__photo"><img src="photos/sports.webp" alt=""></div>
+    <div class="inner">
+      <div class="kick">Scarborough Beach · Perth</div>
+      <h1>Gear that keeps up<br>with the <em>coast.</em></h1>
+      <p class="sub">Run clubs, surf crews, Saturday netball. We fit shoes properly — bring your old pair and we'll read the wear pattern before we sell you anything.</p>
+      <div class="ctas">
+        <div class="p">Book a free gait fit</div>
+        <div class="s">Shop new season</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cats">
+    <div class="cat"><div class="ico"></div><b>Run</b><span>Road, trail and parkrun. Free gait analysis every Saturday.</span></div>
+    <div class="cat"><div class="ico b"></div><b>Footy</b><span>Boots, headgear, mouthguards. Junior sizes in stock.</span></div>
+    <div class="cat"><div class="ico c"></div><b>Swim</b><span>Goggles, wetties, club bathers. Squad discounts available.</span></div>
+    <div class="cat"><div class="ico d"></div><b>Gym</b><span>Chalk, belts, bands. Everything the garage gym needs.</span></div>
+  </section>
+
+  <div class="foot">
+    <span><b>Open</b> Mon–Fri 9–6 · Sat 9–5 · Sun 11–4</span>
+    <span><b>Find us</b> 88 Brighton Rd, Scarborough WA 6019</span>
+    <span><b>Call</b> (08) 9000 7788</span>
+  </div>
+</body>
+</html>

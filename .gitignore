@@ -1,0 +1,9 @@
+# Runtime data — enquiries and the admin token stay out of version control
+data/
+
+# Python
+*.pyc
+__pycache__/
+
+# Local screenshot scratch
+.shots/

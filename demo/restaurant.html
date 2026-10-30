@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="UTF-8">
+<title>Bistro Nord — Sydney</title>
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  html,body{width:1440px;height:900px;overflow:hidden}
+  body{font-family:"Segoe UI",Helvetica,Arial,sans-serif;background:#FBF6EE;color:#2A211B}
+  .nav{display:flex;align-items:center;justify-content:space-between;padding:26px 64px;border-bottom:1px solid rgba(42,33,27,.10)}
+  .logo{font-family:Georgia,serif;font-size:23px;letter-spacing:.14em;text-transform:uppercase}
+  .logo span{color:#B4552F}
+  .links{display:flex;gap:34px;font-size:13.5px;letter-spacing:.06em;text-transform:uppercase;color:#5C4F45}
+  .btn{padding:12px 24px;border-radius:2px;background:#2A211B;color:#FBF6EE;font-size:12.5px;letter-spacing:.1em;text-transform:uppercase}
+  .hero{display:grid;grid-template-columns:1fr 620px;height:calc(900px - 86px - 176px)}
+  .copy{padding:78px 64px 0;display:flex;flex-direction:column}
+  .kick{font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:#B4552F;margin-bottom:26px}
+  h1{font-family:Georgia,serif;font-size:66px;line-height:1.04;letter-spacing:-.02em;font-weight:400}
+  h1 em{font-style:italic;color:#B4552F}
+  .sub{margin-top:26px;font-size:16px;line-height:1.7;color:#5C4F45;max-width:430px}
+  .meta{margin-top:auto;padding-bottom:56px;display:flex;gap:44px;font-size:13px;color:#5C4F45}
+  .meta b{display:block;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:#2A211B;margin-bottom:6px;font-weight:600}
+
+  .shot{position:relative;overflow:hidden;background:#8A3E20}
+  .shot__photo{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 58%}
+  .vignette{position:absolute;inset:0;background:linear-gradient(180deg,rgba(46,14,4,.34) 0%,rgba(46,14,4,0) 40%,rgba(46,14,4,.62) 100%)}
+  .card{position:absolute;z-index:3;left:32px;bottom:30px;width:322px;padding:24px 24px 20px;background:rgba(251,246,238,.95);
+    box-shadow:0 36px 70px rgba(46,14,4,.48)}
+  .card-k{font-size:10px;letter-spacing:.26em;text-transform:uppercase;color:#B4552F;margin-bottom:12px}
+  .card h2{font-family:Georgia,serif;font-weight:400;font-size:21px;line-height:1.2;margin-bottom:12px;color:#2A211B}
+  .row{display:flex;justify-content:space-between;align-items:baseline;gap:12px;padding:8px 0;border-top:1px solid rgba(42,33,27,.13)}
+  .row b{font-weight:600;font-size:12px;display:block}
+  .row small{display:block;font-size:10.5px;color:#8A7A6C;margin-top:2px}
+  .row i{font-style:normal;font-family:Georgia,serif;font-size:14px;color:#B4552F;white-space:nowrap}
+  .card-f{margin-top:18px;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:#8A7A6C}
+
+  .stripe{position:absolute;left:0;bottom:0;right:0;height:176px;background:#2A211B;color:#FBF6EE;display:grid;grid-template-columns:repeat(3,1fr)}
+  .dish{padding:34px 40px;border-right:1px solid rgba(251,246,238,.14)}
+  .dish:last-child{border-right:0}
+  .dish b{display:block;font-family:Georgia,serif;font-size:19px;font-weight:400;margin-bottom:7px}
+  .dish span{font-size:12.5px;line-height:1.6;color:rgba(251,246,238,.62)}
+  .dish i{float:right;font-style:normal;font-size:14px;color:#D89B6A}
+</style>
+</head>
+<body>
+  <header class="nav">
+    <div class="logo">Bistro <span>Nord</span></div>
+    <nav class="links"><span>Menu</span><span>Our story</span><span>Private dining</span><span>Find us</span></nav>
+    <div class="btn">Book a table</div>
+  </header>
+
+  <section class="hero">
+    <div class="copy">
+      <div class="kick">Neutral Bay · Sydney</div>
+      <h1>Wood-fired,<br>from the <em>northern</em><br>beaches.</h1>
+      <p class="sub">A small kitchen doing big flavours. Local seafood, sourdough baked each morning, and a wine list that leans natural.</p>
+      <div class="meta">
+        <div><b>Open</b>Tue–Sun<br>12pm – late</div>
+        <div><b>Where</b>14 Military Rd<br>Neutral Bay NSW</div>
+        <div><b>Book</b>(02) 8000 1234<br>hello@bistronord.com.au</div>
+      </div>
+    </div>
+
+    <div class="shot">
+      <img class="shot__photo" src="photos/restaurant.webp" alt="">
+      <div class="vignette"></div>
+      <div class="card">
+        <div class="card-k">On the pass tonight</div>
+        <h2>Four courses,<br>one sitting.</h2>
+        <div class="row"><span><b>Oysters, mignonette</b><small>Hawkesbury River, half dozen</small></span><i>$24</i></div>
+        <div class="row"><span><b>Sourdough &amp; cultured butter</b><small>Baked at 5am, churned in-house</small></span><i>$9</i></div>
+        <div class="row"><span><b>Grilled snapper, fennel</b><small>Line-caught, charcoal grill</small></span><i>$38</i></div>
+        <div class="row"><span><b>Burnt honey panna cotta</b><small>Hawkesbury honey, roasted fig</small></span><i>$16</i></div>
+        <div class="card-f">Menu changes weekly</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="stripe">
+    <div class="dish"><b>Local first <i>—</i></b><span>Fish from the Hawkesbury, produce from the Northern Beaches growers market.</span></div>
+    <div class="dish"><b>Small room <i>32</i></b><span>Thirty-two seats, one sitting. Book ahead for Friday and Saturday.</span></div>
+    <div class="dish"><b>Private dining <i>12</i></b><span>The back room seats twelve. Set menus from $75 a head.</span></div>
+  </section>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="UTF-8">
+<title>Fern &amp; File — Melbourne</title>
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  html,body{width:1440px;height:900px;overflow:hidden}
+  body{font-family:"Segoe UI",Helvetica,Arial,sans-serif;background:#F7F3EE;color:#37332F}
+  .nav{display:flex;align-items:center;justify-content:space-between;padding:30px 60px}
+  .logo{font-size:21px;letter-spacing:.02em;font-weight:600}
+  .logo span{font-family:Georgia,serif;font-style:italic;font-weight:400;color:#8A9A85}
+  .links{display:flex;align-items:center;gap:30px;font-size:13.5px;color:#6A635C}
+  .pill{padding:11px 22px;border-radius:999px;background:#37332F;color:#F7F3EE;font-size:12.5px;letter-spacing:.04em}
+  .hero{display:grid;grid-template-columns:560px 1fr;gap:64px;padding:14px 60px 0;align-items:start}
+  .arch{position:relative;width:100%;height:560px;border-radius:280px 280px 16px 16px;overflow:hidden;background:#DDBFB6}
+  .arch__photo{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 42%}
+  .arch::after{content:"";position:absolute;inset:0;pointer-events:none;
+    background:linear-gradient(180deg,rgba(120,70,60,.10) 0%,rgba(120,70,60,0) 45%,rgba(120,70,60,.16) 100%)}
+  .copy{padding-top:52px}
+  .kick{font-size:11.5px;letter-spacing:.24em;text-transform:uppercase;color:#8A9A85;margin-bottom:24px}
+  h1{font-family:Georgia,serif;font-weight:400;font-size:58px;line-height:1.08;letter-spacing:-.015em;color:#37332F}
+  h1 em{font-style:italic;color:#A9766C}
+  .sub{margin-top:22px;font-size:15.5px;line-height:1.75;color:#6A635C;max-width:420px}
+  .list{margin-top:38px;border-top:1px solid rgba(55,51,47,.14)}
+  .row{display:flex;align-items:baseline;justify-content:space-between;padding:15px 0;border-bottom:1px solid rgba(55,51,47,.14);font-size:14.5px}
+  .row b{font-weight:600}
+  .row small{display:block;font-size:12.5px;color:#8B847C;margin-top:3px;font-weight:400}
+  .row i{font-style:normal;color:#A9766C;font-weight:600}
+  .foot{display:flex;gap:36px;margin-top:32px;font-size:12.5px;color:#8B847C}
+  .foot span b{color:#37332F;display:block;margin-bottom:3px;font-size:12px;letter-spacing:.1em;text-transform:uppercase}
+</style>
+</head>
+<body>
+  <header class="nav">
+    <div class="logo">Fern <span>&amp;</span> File</div>
+    <nav class="links"><span>Services</span><span>Our space</span><span>Afterpay</span><span>Gift cards</span></nav>
+    <div class="pill">Book online</div>
+  </header>
+
+  <section class="hero">
+    <div class="arch">
+      <img class="arch__photo" src="photos/salon.webp" alt="">
+    </div>
+
+    <div class="copy">
+      <div class="kick">Brunswick East · Melbourne</div>
+      <h1>Quiet hands,<br><em>good</em> nails.</h1>
+      <p class="sub">A four-chair studio on Lygon Street. No upsell, no queue, no television. Just a proper manicure and somewhere to sit down for an hour.</p>
+
+      <div class="list">
+        <div class="row"><span><b>Signature manicure</b><small>Shape, cuticle care, polish or buff</small></span><i>$65</i></div>
+        <div class="row"><span><b>Gel overlay</b><small>Two-week wear, 40+ colours</small></span><i>$85</i></div>
+        <div class="row"><span><b>Spa pedicure</b><small>Soak, exfoliation, massage, polish</small></span><i>$95</i></div>
+      </div>
+
+      <div class="foot">
+        <span><b>Open</b>Tue–Sat 10–6</span>
+        <span><b>Find us</b>212 Lygon St, Brunswick East</span>
+        <span><b>Call</b>(03) 9000 4321</span>
+      </div>
+    </div>
+  </section>
+</body>
+</html>

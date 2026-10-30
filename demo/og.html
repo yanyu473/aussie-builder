@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="UTF-8">
+<title>OG cover</title>
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  html,body{width:1200px;height:630px;overflow:hidden}
+  body{font-family:"Segoe UI",Helvetica,Arial,sans-serif;background:#0E2A24;color:#fff;position:relative}
+  .glow{position:absolute;width:760px;height:760px;border-radius:50%;right:-180px;top:-260px;
+    background:radial-gradient(circle,rgba(201,130,42,.30) 0%,rgba(201,130,42,0) 62%)}
+  .glow2{position:absolute;width:520px;height:520px;border-radius:50%;left:-160px;bottom:-240px;
+    background:radial-gradient(circle,rgba(110,231,168,.16) 0%,rgba(110,231,168,0) 66%)}
+  .wrap{position:relative;z-index:3;display:flex;height:100%;padding:64px 60px}
+  .left{width:590px;display:flex;flex-direction:column}
+  .brand{display:flex;align-items:center;gap:14px;margin-bottom:auto}
+  .brand svg{width:44px;height:44px}
+  .brand b{font-size:26px;font-weight:700;letter-spacing:-.02em}
+  .brand b span{color:#7FD9B4}
+  .brand small{display:block;font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:rgba(255,255,255,.5);margin-top:3px;font-weight:600}
+  h1{font-size:42px;max-width:545px;line-height:1.12;letter-spacing:-.03em;font-weight:700;margin-bottom:18px}
+  h1 em{font-style:normal;color:#E8A33D}
+  .sub{font-size:17px;line-height:1.55;color:rgba(255,255,255,.66);max-width:470px;margin-bottom:26px}
+  .meta{display:flex;gap:10px}
+  .pill{padding:8px 15px;border-radius:999px;border:1px solid rgba(255,255,255,.22);font-size:12.5px;color:rgba(255,255,255,.8)}
+  .pill.hot{background:#E8A33D;border-color:#E8A33D;color:#231304;font-weight:700}
+
+  .right{position:relative;flex:1;margin-left:24px}
+  .shot{position:absolute;border-radius:12px;overflow:hidden;box-shadow:0 30px 70px rgba(0,0,0,.55);border:1px solid rgba(255,255,255,.14)}
+  .shot img{width:100%;height:100%;object-fit:cover;object-position:top center;display:block}
+  .s1{width:400px;height:250px;right:14px;top:38px;transform:rotate(2.4deg);z-index:2}
+  .s2{width:332px;height:208px;right:128px;top:262px;transform:rotate(-3.2deg);z-index:3}
+  .s3{width:278px;height:174px;right:-16px;top:336px;transform:rotate(4deg);z-index:1;opacity:.9}
+</style>
+</head>
+<body>
+  <div class="glow"></div>
+  <div class="glow2"></div>
+  <div class="wrap">
+    <div class="left">
+      <div class="brand">
+        <svg viewBox="0 0 32 32" fill="none">
+          <rect width="32" height="32" rx="9" fill="#14524A"/>
+          <path d="M9 22.6 16 9.2l7 13.4" stroke="#fff" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M12.5 18.1h7" stroke="#C9822A" stroke-width="2.3" stroke-linecap="round"/>
+        </svg>
+        <span>
+          <b>Aussie<span>Builder</span></b>
+          <small>Websites for local business</small>
+        </span>
+      </div>
+
+      <h1>A proper website for your business, <em>live in days</em>.</h1>
+      <p class="sub">AI drafts the whole site from one questionnaire. Built for cafés, salons, trade shops, sports stores and golf retail.</p>
+      <div class="meta">
+        <span class="pill hot">From AUD $499</span>
+        <span class="pill">First draft in 3 business days</span>
+      </div>
+    </div>
+
+    <div class="right">
+      <div class="shot s1"><img src="../assets/img/cases/restaurant.webp" alt=""></div>
+      <div class="shot s2"><img src="../assets/img/cases/hardware.webp" alt=""></div>
+      <div class="shot s3"><img src="../assets/img/cases/salon.webp" alt=""></div>
+    </div>
+  </div>
+</body>
+</html>

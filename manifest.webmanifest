@@ -1,0 +1,15 @@
+{
+  "name": "Aussie Builder — websites for Australian small business",
+  "short_name": "Aussie Builder",
+  "description": "AI-drafted websites for Australian small business. First draft in 3 business days, from AUD $499.",
+  "start_url": "/index.html",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#FFFFFF",
+  "theme_color": "#14524A",
+  "lang": "en-AU",
+  "icons": [
+    { "src": "/assets/img/favicon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" },
+    { "src": "/assets/img/apple-touch-icon.png", "sizes": "180x180", "type": "image/png" }
+  ]
+}

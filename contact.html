@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact — get a website quote for your business | Aussie Builder</title>
+<meta name="description" content="Send us your business details and we'll come back with a written quote within one business day. Or ask the assistant first.">
+<link rel="canonical" href="https://aussiebuilder.com.au/contact.html">
+<meta name="theme-color" content="#14524A">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="assets/img/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+<link rel="manifest" href="manifest.webmanifest">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Aussie Builder">
+<meta property="og:locale" content="en_AU">
+<meta property="og:title" content="Contact — get a website quote for your business | Aussie Builder">
+<meta property="og:description" content="Send us your business details and we'll come back with a written quote within one business day. Or ask the assistant first.">
+<meta property="og:url" content="https://aussiebuilder.com.au/contact.html">
+<meta property="og:image" content="https://aussiebuilder.com.au/assets/img/og-cover.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="alternate" hreflang="en-AU" href="https://aussiebuilder.com.au/contact.html">
+<link rel="alternate" hreflang="x-default" href="https://aussiebuilder.com.au/contact.html">
+
+<link rel="preload" as="font" type="font/woff2" href="assets/fonts/inter-latin.woff2" crossorigin>
+<link rel="stylesheet" href="assets/css/site.css">
+</head>
+<body>
+
+
+<div class="scroll-progress" aria-hidden="true"><span></span></div>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header" id="siteHeader">
+  <div class="wrap">
+    <nav class="nav" aria-label="Main">
+      <a class="brand" href="index.html">
+        <svg class="brand__mark" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+          <rect width="32" height="32" rx="9" fill="#14524A"/>
+          <path d="M9 22.6 16 9.2l7 13.4" stroke="#fff" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M12.5 18.1h7" stroke="#C9822A" stroke-width="2.3" stroke-linecap="round"/>
+        </svg>
+        <span>
+          <span class="brand__name">Aussie<span>Builder</span></span>
+          <span class="brand__sub" data-i18n="nav.brandSub">Websites for local business</span>
+        </span>
+      </a>
+
+      <ul class="nav__links">
+        <li><a class="nav__link" href="cases.html" data-i18n="nav.cases">Case studies</a></li>
+        <li><a class="nav__link" href="services.html" data-i18n="nav.services">How it works</a></li>
+        <li><a class="nav__link" href="pricing.html" data-i18n="nav.pricing">Pricing</a></li>
+        <li><a class="nav__link" href="contact.html" data-i18n="nav.contact">Contact</a></li>
+      </ul>
+
+      <div class="nav__actions">
+        <button class="lang-btn" id="langToggle" type="button" aria-label="切换到中文">
+          <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a15 15 0 0 1 0 18M12 3a15 15 0 0 0 0 18"/></svg>
+          中文
+        </button>
+        <a class="btn btn--primary nav__cta" href="contact.html" data-i18n="nav.cta">Get my free quote</a>
+        <button class="nav__toggle" id="navToggle" type="button" aria-expanded="false" aria-controls="drawer" aria-label="Menu">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        </button>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<div class="drawer" id="drawer" aria-hidden="true">
+  <ul>
+    <li><a href="cases.html" data-i18n="nav.cases">Case studies</a></li>
+    <li><a href="services.html" data-i18n="nav.services">How it works</a></li>
+    <li><a href="pricing.html" data-i18n="nav.pricing">Pricing</a></li>
+    <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
+  </ul>
+  <a class="btn btn--primary" href="contact.html" data-i18n="nav.cta">Get my free quote</a>
+</div>
+
+<main id="main">
+
+<section class="page-hero">
+  <div class="wrap">
+    <span class="eyebrow" data-i18n="contact.hero.eyebrow">Contact</span>
+    <h1 data-i18n="contact.hero.title">Tell us about the business and we'll price it</h1>
+    <p class="lede" data-i18n="contact.hero.sub">Fill this in and someone replies within one business day. If you'd rather just ask a few questions first, the assistant in the corner is always on.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="contact-grid">
+
+      <div>
+        <div class="form-card">
+          <h2 style="font-size:1.25rem;margin-bottom:6px" data-i18n="contact.form.title">Project enquiry</h2>
+          <p style="font-size:.82rem;color:var(--muted);margin-bottom:26px" data-i18n="contact.form.legend">Fields marked * are required.</p>
+
+          <form id="contactForm" novalidate data-endpoint="">
+            <div class="field">
+              <label for="f-business"><span data-i18n="contact.f.business">Business name</span> <span class="req" aria-hidden="true">*</span></label>
+              <input class="input" id="f-business" name="business" type="text" required autocomplete="organization"
+                     data-i18n-ph="contact.f.businessPh" placeholder="e.g. Fern &amp; File Nail Studio">
+              <span class="field__error" role="alert"></span>
+            </div>
+
+            <div class="field">
+              <label for="f-industry"><span data-i18n="contact.f.industry">Industry</span> <span class="req" aria-hidden="true">*</span></label>
+              <select class="select" id="f-industry" name="industry" required>
+                <option value="" data-i18n="contact.f.industryPh">Please choose</option>
+                <option value="restaurant" data-i18n="home.strip.i1">Restaurant &amp; café</option>
+                <option value="salon" data-i18n="home.strip.i2">Nail &amp; beauty</option>
+                <option value="hardware" data-i18n="home.strip.i3">Hardware &amp; trade</option>
+                <option value="sports" data-i18n="home.strip.i4">Sports store</option>
+                <option value="golf" data-i18n="home.strip.i5">Golf retail</option>
+                <option value="other" data-i18n="contact.f.industryOther">Something else</option>
+              </select>
+              <span class="field__error" role="alert"></span>
+            </div>
+
+            <div class="field--row">
+              <div class="field">
+                <label for="f-name"><span data-i18n="contact.f.name">Your name</span> <span class="req" aria-hidden="true">*</span></label>
+                <input class="input" id="f-name" name="name" type="text" required autocomplete="name"
+                       data-i18n-ph="contact.f.namePh" placeholder="What should we call you">
+                <span class="field__error" role="alert"></span>
+              </div>
+              <div class="field">
+                <label for="f-email"><span data-i18n="contact.f.email">Email</span> <span class="req" aria-hidden="true">*</span></label>
+                <input class="input" id="f-email" name="email" type="email" required autocomplete="email"
+                       data-i18n-ph="contact.f.emailPh" placeholder="name@example.com">
+                <span class="field__error" role="alert"></span>
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="f-phone" data-i18n="contact.f.phone">Phone</label>
+              <input class="input" id="f-phone" name="phone" type="tel" autocomplete="tel"
+                     data-i18n-ph="contact.f.phonePh" placeholder="04XX XXX XXX">
+              <span class="hint" data-i18n="contact.f.phoneHint">Australian mobile or landline. Optional.</span>
+              <span class="field__error" role="alert"></span>
+            </div>
+
+            <div class="field">
+              <label for="f-site" data-i18n="contact.f.site">Current website, if any</label>
+              <input class="input" id="f-site" name="site" type="url" autocomplete="url"
+                     data-i18n-ph="contact.f.sitePh" placeholder="https://">
+              <span class="field__error" role="alert"></span>
+            </div>
+
+            <div class="field">
+              <label for="f-brief"><span data-i18n="contact.f.brief">What do you need?</span> <span class="req" aria-hidden="true">*</span></label>
+              <textarea class="textarea" id="f-brief" name="brief" required maxlength="500"
+                        data-i18n-ph="contact.f.briefPh" placeholder="What the shop does, where it is, what you most want customers to see. Three or four lines is plenty."></textarea>
+              <span class="hint" data-i18n="contact.f.briefHint">Up to 500 characters.</span>
+              <span class="field__error" role="alert"></span>
+            </div>
+
+            <div class="field">
+              <span class="hint" style="margin:0 0 9px;font-size:.87rem;font-weight:600;color:var(--ink)" data-i18n="contact.f.plan">Which package are you leaning towards?</span>
+              <div class="radio-set" role="radiogroup" aria-label="Preferred package">
+                <label><input type="radio" name="plan" value="starter"><span data-i18n="p.starter.name">Starter</span></label>
+                <label><input type="radio" name="plan" value="pro"><span data-i18n="p.pro.name">Professional</span></label>
+                <label><input type="radio" name="plan" value="custom"><span data-i18n="p.custom.name">Custom</span></label>
+                <label><input type="radio" name="plan" value="unsure" checked><span data-i18n="contact.f.planAny">Not sure yet</span></label>
+              </div>
+            </div>
+
+            <div class="hp" aria-hidden="true">
+              <label for="f-hp">Leave this empty</label>
+              <input id="f-hp" name="company_website" type="text" tabindex="-1" autocomplete="off">
+            </div>
+
+            <button class="btn btn--primary btn--lg btn--block" type="submit" data-i18n="contact.f.submit">Send enquiry</button>
+
+            <p class="form-note" data-i18n-html="contact.f.privacy">By sending this you agree to us handling the details under our <a href="privacy.html">privacy policy</a>. We don't pass them to anyone else and we don't add you to a mailing list.</p>
+
+            <div class="form-status" id="formStatus" role="alert"></div>
+          </form>
+
+          <div class="form-success" id="formSuccess" role="status">
+            <span class="form-success__mark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg></span>
+            <h3 data-i18n="contact.ok.title">Got it</h3>
+            <p data-i18n-html="contact.ok.body">We'll be in touch within one business day. If it's urgent, call <a href="tel:+61280000000">+61 2 8000 0000</a>.</p>
+            <p class="form-demo" id="formDemo" hidden data-i18n="contact.ok.demo">Preview mode — this enquiry was not sent.</p>
+            <button class="btn btn--ghost" type="button" id="formAgain" data-i18n="contact.ok.again">Send another enquiry</button>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div class="aside-card">
+          <h3 data-i18n="contact.aside.title">Reach us directly</h3>
+          <ul class="aside-list">
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="m3.5 7 8.5 6 8.5-6"/></svg>
+              <span><strong>hello@aussiebuilder.com.au</strong><span data-i18n="contact.aside.response">Replies within one business day</span></span>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6.5 3.5h3l1.5 4-2 1.5a12 12 0 0 0 6 6l1.5-2 4 1.5v3a2 2 0 0 1-2.2 2A17 17 0 0 1 4.5 5.7a2 2 0 0 1 2-2.2Z"/></svg>
+              <span><strong>+61 2 8000 0000</strong><span data-i18n="contact.aside.hours">Mon–Fri, 9:00–17:00 AEST</span></span>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s7-6.2 7-11a7 7 0 1 0-14 0c0 4.8 7 11 7 11Z"/><circle cx="12" cy="10" r="2.6"/></svg>
+              <span><strong>Sydney, NSW</strong><span data-i18n="contact.aside.mapBody">Remote delivery Australia-wide. Clients in Sydney, Melbourne, Brisbane, Perth and Adelaide.</span></span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="map-embed" role="img" aria-label="Stylised map showing service coverage across Australia">
+          <span class="map-embed__pin" aria-hidden="true"></span>
+          <div class="map-embed__card">
+            <strong data-i18n="contact.aside.mapTitle">Where we work</strong>
+            <span data-i18n="contact.aside.mapBody">Remote delivery Australia-wide. Clients in Sydney, Melbourne, Brisbane, Perth and Adelaide.</span>
+          </div>
+        </div>
+
+        <div class="aside-card" style="margin-top:16px">
+          <h3 data-i18n="contact.aside.chatTitle">Rather not fill in a form?</h3>
+          <p style="font-size:.88rem;color:var(--muted);margin-bottom:16px" data-i18n="contact.aside.chatBody">The assistant can answer the usual questions first, and take your details only when you want a quote.</p>
+          <button class="btn btn--ghost btn--block" type="button" data-open-chat data-i18n="contact.aside.chatBtn">Open the AI assistant</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <a class="brand" href="index.html">
+          <svg class="brand__mark" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+            <rect width="32" height="32" rx="9" fill="#14524A"/>
+            <path d="M9 22.6 16 9.2l7 13.4" stroke="#fff" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M12.5 18.1h7" stroke="#C9822A" stroke-width="2.3" stroke-linecap="round"/>
+          </svg>
+          <span>
+            <span class="brand__name">Aussie<span>Builder</span></span>
+            <span class="brand__sub" data-i18n="nav.brandSub">Websites for local business</span>
+          </span>
+        </a>
+        <p data-i18n="footer.blurb">AI-assisted websites for Australian small business. You answer the questions, we do the rest.</p>
+      </div>
+
+      <div class="footer-col">
+        <h3 data-i18n="footer.colServices">Services</h3>
+        <ul>
+          <li><a href="pricing.html" data-i18n="footer.site">Website packages</a></li>
+          <li><a href="services.html" data-i18n="footer.seo">Local SEO</a></li>
+          <li><a href="services.html" data-i18n="footer.care">Site care</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h3 data-i18n="footer.colCompany">Company</h3>
+        <ul>
+          <li><a href="services.html" data-i18n="footer.about">About us</a></li>
+          <li><a href="cases.html" data-i18n="footer.cases">Case studies</a></li>
+          <li><a href="contact.html" data-i18n="footer.contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h3 data-i18n="footer.colContact">Contact</h3>
+        <ul>
+          <li><a href="mailto:hello@aussiebuilder.com.au">hello@aussiebuilder.com.au</a></li>
+          <li><a href="tel:+61280000000">+61 2 8000 0000</a></li>
+          <li>Sydney, NSW</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© <span data-year>2026</span> Aussie Builder Pty Ltd · <span data-i18n="footer.abn">ABN 12 345 678 901</span></p>
+      <nav>
+        <a href="privacy.html" data-i18n="footer.privacy">Privacy</a>
+        <a href="privacy.html#terms" data-i18n="footer.terms">Terms</a>
+      </nav>
+    </div>
+  </div>
+</footer>
+
+<!-- ============ Mobile sticky CTA ============ -->
+<div class="mobile-cta" id="mobileCta">
+  <a class="mobile-cta__call" href="tel:+61280000000" data-i18n-aria="mobile.call" aria-label="Call us">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6.5 3.5h3l1.5 4-2 1.5a12 12 0 0 0 6 6l1.5-2 4 1.5v3a2 2 0 0 1-2.2 2A17 17 0 0 1 4.5 5.7a2 2 0 0 1 2-2.2Z"/></svg>
+  </a>
+  <a class="btn btn--primary mobile-cta__main" href="contact.html">
+    <span data-i18n="nav.cta">Get my free quote</span>
+  </a>
+</div>
+
+<!-- ============ Chat ============ -->
+<div class="chat" id="chat">
+  <div class="chat__panel" id="chatPanel" role="dialog" aria-labelledby="chatTitle" aria-hidden="true">
+    <div class="chat__head">
+      <span class="chat__avatar" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a8 8 0 0 1-8 8H7l-4 3v-6.5A8 8 0 0 1 11 4h2a8 8 0 0 1 8 8Z"/><path d="M9 11h6M9 15h4"/></svg>
+      </span>
+      <div>
+        <h3 id="chatTitle" data-i18n="chat.title">AI assistant</h3>
+        <p data-i18n="chat.status">Online · replies instantly</p>
+      </div>
+      <button class="chat__close" id="chatClose" type="button" data-i18n-aria="chat.close" aria-label="Close chat">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg>
+      </button>
+    </div>
+
+    <div class="chat__log" id="chatLog" role="log" aria-live="polite">
+      <div class="msg msg--bot">Kia ora — I'm the Aussie Builder assistant. Ask me about pricing, turnaround, or whether we cover your industry.</div>
+    </div>
+
+    <div class="chat__quick" id="chatQuick">
+      <button type="button" data-i18n="chat.quick1">What does a site cost?</button>
+      <button type="button" data-i18n="chat.quick2">How long does it take?</button>
+      <button type="button" data-i18n="chat.quick3">What do I need to prepare?</button>
+      <button type="button" data-i18n="chat.quick4">Do you cover my industry?</button>
+    </div>
+
+    <form class="chat__form" id="chatForm">
+      <label class="sr-only" for="chatInput">Your message</label>
+      <input id="chatInput" type="text" autocomplete="off" data-i18n-ph="chat.placeholder" placeholder="Ask about pricing, turnaround or your industry…">
+      <button class="chat__send" type="submit" data-i18n-aria="chat.send" aria-label="Send message">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 2 11 13M22 2l-7 20-4-9-9-4 20-7Z"/></svg>
+      </button>
+    </form>
+  </div>
+
+  <button class="chat__launcher" id="chatToggle" type="button" aria-expanded="false" aria-controls="chatPanel">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a8 8 0 0 1-8 8H7l-4 3v-6.5A8 8 0 0 1 11 4h2a8 8 0 0 1 8 8Z"/><path d="M9 11h6M9 15h4"/></svg>
+    <span class="chat__launcher-text" data-i18n="chat.launcher">Questions? Ask AI</span>
+    <span class="chat__launcher-dot" aria-hidden="true"></span>
+  </button>
+</div>
+
+<script src="assets/js/analytics.js"></script>
+<script src="assets/js/i18n.js"></script>
+<script src="assets/js/api.js"></script>
+<script src="assets/js/site.js"></script>
+<script src="assets/js/estimator.js"></script>
+<script src="assets/js/chat.js"></script>
+</body>
+</html>

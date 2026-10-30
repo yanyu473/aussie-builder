@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aussie AI Website Builder | AI智能建站平台</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <h1>🦘 Aussie Builder</h1>
+            </div>
+            <div class="nav-menu">
+                <a href="#home" data-i18n="nav.home">Home</a>
+                <a href="#cases" data-i18n="nav.cases">Cases</a>
+                <a href="#pricing" data-i18n="nav.pricing">Pricing</a>
+                <button id="langToggle" class="lang-btn">中文</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title" data-i18n="hero.title">
+                    Professional Websites for Australian Small Businesses
+                </h1>
+                <p class="hero-subtitle" data-i18n="hero.subtitle">
+                    AI-powered website creation in days, not weeks. Perfect for cafes, nail salons, retail stores, and sports shops.
+                </p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary" data-i18n="hero.cta">Get Free Quote</button>
+                    <button class="btn btn-secondary" data-i18n="hero.viewCases">View Cases</button>
+                </div>
+            </div>
+
+            <!-- Value Props -->
+            <div class="value-props">
+                <div class="value-card">
+                    <div class="value-icon">🤖</div>
+                    <h3 data-i18n="values.ai.title">AI Generated</h3>
+                    <p data-i18n="values.ai.desc">Fill a simple form, AI drafts your entire website</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon">⚡</div>
+                    <h3 data-i18n="values.fast.title">Fast Delivery</h3>
+                    <p data-i18n="values.fast.desc">First draft within 3 business days</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon">📱</div>
+                    <h3 data-i18n="values.mobile.title">Mobile First</h3>
+                    <p data-i18n="values.mobile.desc">80% of customers find you on mobile</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon">🇦🇺</div>
+                    <h3 data-i18n="values.local.title">Local Optimized</h3>
+                    <p data-i18n="values.local.desc">Designed for Australian business needs</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cases Carousel -->
+    <section id="cases" class="cases-section">
+        <div class="container">
+            <h2 class="section-title" data-i18n="cases.title">Customer Showcases</h2>
+            <p class="section-subtitle" data-i18n="cases.subtitle">Real websites built for Australian businesses</p>
+
+            <div class="carousel">
+                <button class="carousel-btn prev" id="prevBtn">‹</button>
+                <div class="carousel-container">
+                    <div class="carousel-track" id="carouselTrack">
+                        <!-- Case cards will be dynamically generated -->
+                    </div>
+                </div>
+                <button class="carousel-btn next" id="nextBtn">›</button>
+            </div>
+
+            <div class="carousel-dots" id="carouselDots"></div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing-section">
+        <div class="container">
+            <h2 class="section-title" data-i18n="pricing.title">Transparent Pricing</h2>
+            <p class="section-subtitle" data-i18n="pricing.subtitle">No hidden fees, clear packages</p>
+
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <h3 data-i18n="pricing.starter.name">Starter</h3>
+                    <div class="price">
+                        <span class="currency">AUD</span>
+                        <span class="amount">$599</span>
+                    </div>
+                    <ul class="features">
+                        <li data-i18n="pricing.starter.feature1">✓ Up to 5 pages</li>
+                        <li data-i18n="pricing.starter.feature2">✓ Mobile responsive</li>
+                        <li data-i18n="pricing.starter.feature3">✓ Contact form</li>
+                        <li data-i18n="pricing.starter.feature4">✓ Google Maps</li>
+                        <li data-i18n="pricing.starter.feature5">✓ 5 business days delivery</li>
+                    </ul>
+                </div>
+
+                <div class="pricing-card featured">
+                    <div class="badge" data-i18n="pricing.pro.badge">Most Popular</div>
+                    <h3 data-i18n="pricing.pro.name">Professional</h3>
+                    <div class="price">
+                        <span class="currency">AUD</span>
+                        <span class="amount">$1,299</span>
+                    </div>
+                    <ul class="features">
+                        <li data-i18n="pricing.pro.feature1">✓ Up to 10 pages</li>
+                        <li data-i18n="pricing.pro.feature2">✓ 3 rounds of revisions</li>
+                        <li data-i18n="pricing.pro.feature3">✓ Basic SEO setup</li>
+                        <li data-i18n="pricing.pro.feature4">✓ Product gallery (50 items)</li>
+                        <li data-i18n="pricing.pro.feature5">✓ 7 business days delivery</li>
+                    </ul>
+                </div>
+
+                <div class="pricing-card">
+                    <h3 data-i18n="pricing.custom.name">Custom</h3>
+                    <div class="price">
+                        <span class="currency">AUD</span>
+                        <span class="amount">$2,499+</span>
+                    </div>
+                    <ul class="features">
+                        <li data-i18n="pricing.custom.feature1">✓ Unlimited pages</li>
+                        <li data-i18n="pricing.custom.feature2">✓ Unlimited revisions</li>
+                        <li data-i18n="pricing.custom.feature3">✓ Advanced SEO</li>
+                        <li data-i18n="pricing.custom.feature4">✓ Dedicated designer</li>
+                        <li data-i18n="pricing.custom.feature5">✓ 10-14 days delivery</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Aussie AI Builder. <span data-i18n="footer.rights">All rights reserved.</span></p>
+        </div>
+    </footer>
+
+    <!-- AI Chatbot Widget -->
+    <div id="chatWidget" class="chat-widget">
+        <button id="chatToggle" class="chat-toggle">
+            <span class="chat-icon">💬</span>
+        </button>
+
+        <div id="chatPanel" class="chat-panel">
+            <div class="chat-header">
+                <h3 data-i18n="chat.title">AI Assistant</h3>
+                <button id="chatClose" class="chat-close">×</button>
+            </div>
+            <div class="chat-messages" id="chatMessages">
+                <div class="chat-message bot">
+                    <p data-i18n="chat.welcome">Hi! I'm here to help. What can I do for you?</p>
+                </div>
+            </div>
+            <div class="chat-quick-buttons" id="quickButtons">
+                <button class="quick-btn" data-i18n="chat.quick1">Pricing info</button>
+                <button class="quick-btn" data-i18n="chat.quick2">How long does it take?</button>
+                <button class="quick-btn" data-i18n="chat.quick3">Do I need technical skills?</button>
+            </div>
+            <div class="chat-input-area">
+                <input type="text" id="chatInput" data-i18n-placeholder="chat.inputPlaceholder" placeholder="Type your message...">
+                <button id="chatSend" class="chat-send-btn">Send</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="translations.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
